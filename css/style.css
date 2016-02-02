@@ -1,6 +1,13 @@
 body {
   font-family: 'OCR A Std';
   font-weight: bolder;
+  background: white no-repeat center center fixed;
+  background-size: cover;
+
+}
+
+.container-full {
+  cursor: url(http://i.imgur.com/nu6VpKz.png), auto;
 }
 
 ul {
@@ -11,7 +18,118 @@ ul {
 
 img {
   position: absolute;
+  top: 0;
+  left: 0;
+
 }
+
+#web {
+  left: 1004px;
+  top: 120px;
+
+}
+#web:hover {
+  left: 1004px;
+  top: 120px;
+  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
+}
+
+#plant1_transp {
+  top: 196px;
+  left: 1178px;
+}
+#plant2_transp {
+  top: 333px;
+  left: 520px;
+}
+#fridge_transp {
+  top: 328px;
+  left: 575px;
+}
+#food {
+  top: 368px;
+  left: 673px;
+}
+#draftingtable_transp {
+  top: 768px;
+  left: 992px;
+}
+
+#djtable_transparent {
+  top: 574px;
+  left: 574px;
+}
+
+#turntables_transp {
+  top: 594px;
+  left: 602px;
+}
+
+#record1 {
+  top: 746px;
+  left: 543px;
+}
+#record2 {
+  top: 735px;
+  left: 556px;
+}
+#record2 {
+  top: 735px;
+  left: 556px;
+}
+#record2 {
+  top: 735px;
+  left: 556px;
+}
+
+#carpet {
+  top: 696px;
+  left: 659px;
+}
+#design {
+  top: 597px;
+  left: 993px;
+
+}
+#design:hover {
+  top: 597px;
+  left: 993px;
+  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
+}
+#music {
+  top: 808px;
+  left: 457px;
+}
+#music:hover {
+  top: 808px;
+  left: 457px;
+}
+#couch {
+  top: 521px;
+  left: 430px;
+}
+#bed {
+  top: 808px;
+  left: 157px;
+}
+#ashtray {
+  top: 890px;
+  left: 172px;
+}
+#lamp {
+  top: 730px;
+  left: 1094px;
+}
+#personal {
+  top: 461px;
+  left: 305px;
+}
+#personal:hover {
+  top: 461px;
+  left: 305px;
+  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
+}
+
 
 .contact {
 
