@@ -1,3 +1,28 @@
+/*draggable classes*/
+.draggable.is-pointer-down {
+
+}
+
+.draggable.is-dragging {
+
+
+}
+
+.isnt-moving {
+    /*cursor: url(http://i.imgur.com/nu6VpKz.png), auto;*/
+}
+
+.is-moving {
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
+
+
+}
+
+* {
+  transition: .2s;
+}
+
+
 body {
   font-family: 'OCR A Std';
   font-weight: bolder;
@@ -7,8 +32,11 @@ body {
 }
 
 .container-full {
-  cursor: url(http://i.imgur.com/nu6VpKz.png), auto;
+  /*cursor: url(http://i.imgur.com/nu6VpKz.png), auto;*/
+  width:100%;
+  height:auto;
 }
+
 
 ul {
   top: 90px;
@@ -20,25 +48,49 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 #web {
   left: 1004px;
   top: 120px;
+	max-width: 100%;
 
 }
 #web:hover {
   left: 1004px;
   top: 120px;
-  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
+
+}
+
+
+#draggable-1 {
+     width: 100px; height: 50px; padding: 0.5em;
+     margin: 22px 5px 10px 0;
+   }
+   #droppable-1 {
+      width: 120px; height: 90px;padding: 0.5em;
+     margin: 10px;
+   }
+
+#cursor_normal {
+  top: 199px;
+  left: 500px;
 }
 
 #plant1_transp {
   top: 196px;
   left: 1178px;
 }
+#plant1_transp:hover {
+  top: 196px;
+  left: 1178px;
+}
 #plant2_transp {
+  top: 333px;
+  left: 520px;
+}
+#plant2_transp:hover {
   top: 333px;
   left: 520px;
 }
@@ -63,6 +115,7 @@ img {
 #turntables_transp {
   top: 594px;
   left: 602px;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
 }
 
 #record1 {
@@ -73,14 +126,7 @@ img {
   top: 735px;
   left: 556px;
 }
-#record2 {
-  top: 735px;
-  left: 556px;
-}
-#record2 {
-  top: 735px;
-  left: 556px;
-}
+
 
 #carpet {
   top: 696px;
@@ -94,7 +140,7 @@ img {
 #design:hover {
   top: 597px;
   left: 993px;
-  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
 }
 #music {
   top: 808px;
@@ -103,6 +149,8 @@ img {
 #music:hover {
   top: 808px;
   left: 457px;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
+
 }
 #couch {
   top: 521px;
@@ -116,9 +164,21 @@ img {
   top: 890px;
   left: 172px;
 }
+#ashtray:hover {
+  top: 890px;
+  left: 172px;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
+
+}
 #lamp {
   top: 730px;
   left: 1094px;
+}
+#lamp:hover {
+  top: 730px;
+  left: 1094px;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
+
 }
 #personal {
   top: 461px;
@@ -127,7 +187,7 @@ img {
 #personal:hover {
   top: 461px;
   left: 305px;
-  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
+  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
 }
 
 
