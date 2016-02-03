@@ -1,62 +1,56 @@
 $(document).ready(function(){
 
-
   var animationName = 'animated bounce';
   var animationFlash = 'animated flash';
   var secondAnimation = 'animated jello';
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-  var webHover = $('#web')
-  var musicHover = $('#music')
-  var designHover = $('#design')
-  var personalHover = $('#personal')
 
-  var $draggable =
-  $('.draggable').draggabilly({
 
-})
+  $('#turntables_transp').click(function(value){
+    document.querySelector("body").setAttribute("style","-webkit-filter:invert(" + 100 + "%)")
+    $('body').css('background', 'black no-repeat center center fixed',
+    '-webkit-filter', 'invert("100%")')
+      console.log('felt');
+  });
+
+
+
+  $('#cursor_normal').click(function() {
+    var clicks = $(this).data('clicks');
+    if (clicks) {
+      $(this).attr('src',"/website_pieces/cursor_normal.png")
+    } else {
+      $(this).attr('src',"/website_pieces/cursor_lifted.png")
+    }
+    $(this).data("clicks", !clicks);
+  });
+  
+
 
 //navigate to links on drop
-$('#cursor_normal').click(function() {
-  var clicks = $(this).data('clicks');
-  if (clicks) {
-  $(this).attr('src','/website_pieces/cursor_lifted.png')
-  } else {
-  $(this).attr('src','/website_pieces/cursor_normal.png')
-  }
-  $(this).data("clicks", !clicks);
-});
+    var $draggable =
+$('.draggable').draggabilly({
 
-
-
-$('#cursor_normal').click(function(){
-  $(this).attr('src','/website_pieces/cursor_lifted.png')
 })
-
-
       $(function() {
            $( "#cursor_normal" ).draggable({
-             containment: "parent"
+
            });
 
-           //navigate to web
            $( "#web" ).droppable({
              drop: function() {
-              location.href = 'http://jp-la.co/web.html'
+              location.href = "http://jp-la.co/web.html"
               console.log('felt the drop on web');
-      }
-
+             }
            });
 
-           //navigate to design
            $( "#design" ).droppable({
              drop: function() {
                location.href = 'http://jp-la.co/art-design.html'
                console.log('felt the drop on design');
              }
-
            });
 
-           //navigate to music
            $( "#music" ).droppable({
              drop: function() {
                location.href = 'http://soundcloud.com/dreamstrax'
@@ -64,7 +58,6 @@ $('#cursor_normal').click(function(){
              }
            });
 
-          // navigate to personal
            $( "#personal" ).droppable({
              drop: function() {
                location.href = 'http://jp-la.co/portfolio.html'
@@ -80,8 +73,8 @@ $('#cursor_normal').click(function(){
 
 
 $('#web').hover(function(){
-  $(this).addClass(animationName).one(animationend,function(){
-      $(this).removeClass(animationName)
+  $(this).addClass(secondAnimation).one(animationend,function(){
+      $(this).removeClass(secondAnimation)
     });
 })
 $('#design').hover(function(){
@@ -95,10 +88,10 @@ $('#personal').hover(function(){
     });
 })
 $('#music').hover(function(){
-  $(this).addClass(animationName).one(animationend,function(){
-      $(this).removeClass(animationName)
+  $(this).addClass(secondAnimation).one(animationend,function(){
+      $(this).removeClass(secondAnimation)
     });
 })
 
 
-})
+});
