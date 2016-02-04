@@ -6,11 +6,14 @@ $(document).ready(function(){
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 //init slider
-  $('section').horizon();
+  $('section').horizon({
+    swipe: false
+  });
 
 
 // jump to sections on click //
-    $("#design").on("click", function( e ) {
+
+    $("#section-section2").on("click", function( e ) {
 
         e.preventDefault();
 
@@ -19,7 +22,26 @@ $(document).ready(function(){
         }, 600);
 
     });
-    $("#music").on("click", function( e ) {
+
+    $("#section-section3").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 600);
+
+    });
+    $("#section-section4").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 600);
+
+    });
+    $("#section-section5").on("click", function( e ) {
 
         e.preventDefault();
 
@@ -29,25 +51,7 @@ $(document).ready(function(){
 
     });
 
-    $("#web").on("click", function( e ) {
-
-        e.preventDefault();
-
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
-        }, 600);
-
-    });
-    $("#personal").on("click", function( e ) {
-
-        e.preventDefault();
-
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
-        }, 600);
-
-    });
-//
+//end jump to sections on click //
 
 
 // gravity

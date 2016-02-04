@@ -222,10 +222,19 @@ section {
   margin: 0;
 }
 
-.horizon-prev, .horizon-next {
+.horizon-prev {
   position: fixed;
   top: 50%;
   margin-top: -24px;
   z-index: 9999;
 
+}
+
+.horizon-next{
+
+  position: fixed;
+  top: 50%;
+  left: 1222px;
+  margin-top: -24px;
+  z-index: 9999;
 }
