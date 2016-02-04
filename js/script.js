@@ -8,7 +8,8 @@ $(document).ready(function(){
   $('body').on('click', function() {
          $('body').jGravity({
               target: 'everything',
-              weight: 25,
+              ignoreClass: 'loft',
+              weight:'light',
               depth: 5,
               drag: true
        });

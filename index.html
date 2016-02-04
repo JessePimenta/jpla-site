@@ -5,39 +5,56 @@
       <title>Jesse Pimenta</title>
 <script src="js/jquery-2.2.0.min.js" charset="utf-8"></script>
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jGravity-min.js"></script>
 <script src="js/script.js" charset="utf-8"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/draggabilly/1.2.0/draggabilly.pkgd.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" charset="utf-8"></script>
 <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="/css/animate.css" media="screen" title="no title" charset="utf-8">
+<link href="/css/hover.css" rel="stylesheet" media="all">
 <link rel="shortcut icon" href="http://imgur.com/K1v7Spq" type="image/x-icon" />
+<ul>
+  <p>Jesse Pimenta</p>
 
+  <a href="http://jp-la.co/web"><p>/ Web Design & Development</p></a>
+  <a href="http://jp-la.co/design"><p>/ Graphic Design</p></a>
+  <a href="http://jp-la.co/music"><p>/ Sound Design</p></a>
+  <p>Drag me around and drop me
+    <br>
+   on which area you'd like to
+    <br>
+   see more about!
+  </p>
+  <br>
+  <br>
+  <p class="contact">to get in touch</p>
+  <p class="contact">opticdesign.jp</p>
+  <p class="contact">dreams@privateselectionrecords.net</p>
+</ul>
   </head>
   <body>
-      <ul>
-        <p>Jesse Pimenta</p>
-        <a href="http://jp-la.co/web"><p>/ Web Design & Development</p></a>
-        <a href="http://jp-la.co/design"><p>/ Graphic Design</p></a>
-        <a href="http://jp-la.co/music"><p>/ Sound Design</p></a>
-        <p>Drag me around and drop me
-          <br>
-         on which area you'd like to
-          <br>
-         see more about!
-        </p>
-        <br>
-        <br>
-        <p class="contact">to get in touch</p>
-        <p class="contact">opticdesign.jp</p>
-        <p class="contact">dreams@privateselectionrecords.net</p>
-      </ul>
-    </div>
+    <div class="page-slider">
     <div class='container-full'>
       <div class="row">
       <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <img class="img-responsive" src="/website_pieces/loft_extended.png" alt="" />
+        <img class="img-responsive loft" src="/website_pieces/loft_extended.png" alt="" />
+
+        <!--slider for music  -->
+        <input id="slide-1-trigger" type="radio" name="slides" checked>
+        <section class="slide slide-one">
+
+        </section
+
+
         <a href="http://jp-la.co/web"><img id='web' class="img-responsive droppable" src="/website_pieces/web_transp.png" alt="" /></a>
+        <!--slider for web  -->
+        <input id="slide-2-trigger" type="radio" name="slides">
+        <section class="slide slide-two">
+          <h1>Web</h1>
+        </section>
+        <!--end slider for web  -->
+
         <img id='plant1_transp' class="img-responsive draggable" src="/website_pieces/plant1_nobg.png" alt="" />
         <img id='djtable_transparent' class="img-responsive" src="/website_pieces/djtable_transparent.png" alt="" />
         <img id='cursor_normal' class="img-responsive draggable" src="/website_pieces/cursor_normal.png" alt="" />
@@ -45,7 +62,19 @@
         <img id='record2' class="img-responsive" src="/website_pieces/ps_record1.png" alt="" />
         <img id='record1' class="img-responsive draggable" src="/website_pieces/nous_record1.png" alt="" />
         <img id='carpet' class="img-responsive" src="/website_pieces/carpet_transp.png" alt="" />
+
+        <!-- slider for art -->
+        <input id="slide-3-trigger" type="radio" name="slides">
+        <section class="slide slide-three">
+          <h1>Art + Design</h1>
+        </section>
+        <!-- end slider for art -->
         <a href="http://jp-la.co/design"><img id='design' class="img-responsive droppable" src="/website_pieces/design_transp.png" alt="" /></a>
+
+
+
+
+
         <a href="http://soundcloud.com/dreamstrax"><img id='music' class="img-responsive droppable" src="/website_pieces/music_transp.png" alt=""/></a>
         <a href="http://jp-la.co/personal"><img id='personal' class="img-responsive droppable" src="/website_pieces/personal_transp.png" alt="" /></a>
         <img id='couch' class="img-responsive draggable" src="/website_pieces/couch_transparent.png" alt="" />
@@ -60,6 +89,7 @@
       </div>
       </div>
     </div>
+  </div>
       <div class="row row-centered">
       </div>
 
