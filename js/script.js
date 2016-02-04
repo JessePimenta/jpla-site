@@ -5,7 +5,53 @@ $(document).ready(function(){
   var secondAnimation = 'animated jello';
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-  $('body').on('click', function() {
+//init slider
+  $('section').horizon();
+
+
+// jump to sections on click //
+    $("#design").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 600);
+
+    });
+    $("#music").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 600);
+
+    });
+
+    $("#web").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 600);
+
+    });
+    $("#personal").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset().top
+        }, 600);
+
+    });
+//
+
+
+// gravity
+  $('#draftingtable_transp').on('click', function() {
          $('body').jGravity({
               target: 'everything',
               ignoreClass: 'loft',
@@ -14,16 +60,22 @@ $(document).ready(function(){
               drag: true
        });
    });
+// end gravity
+
+
+
+// invert
   $('#turntables_transp').click(function(value){
     document.querySelector("body").setAttribute("style","-webkit-filter:invert(" + 100 + "%)")
     $('body').css('background', 'black no-repeat center center fixed',
     '-webkit-filter', 'invert("100%")')
       console.log('felt');
   });
+// end invert
+
 
 
 //cursor switch on click
-
   $('#cursor_normal').click(function() {
     var clicks = $(this).data('clicks');
     if (clicks) {
@@ -33,6 +85,8 @@ $(document).ready(function(){
     }
     $(this).data("clicks", !clicks);
   });
+
+
 
 //invert on off on turntables_transp
 $('#turntables_transp').click(function() {
@@ -49,18 +103,21 @@ $('#turntables_transp').click(function() {
   $(this).data("clicks", !clicks);
 });
 
-hue = 0;
+
+
 //hue rotate
+hue = 0;
 $('#bed').click(function(){
   var hueRotate = function(){
     hue++;
     if(hue >= 360)
       hue = 0;
-    $('body.css.background, #plant1_nobg').css("-webkit-filter", "hue-rotate("+hue+"deg)");
+    $('body').css("-webkit-filter", "hue-rotate("+hue+"deg)");
     setTimeout(hueRotate, 2);
   }
   hueRotate();
 })
+
 
 
 //navigate to links on drop

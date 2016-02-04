@@ -7,13 +7,15 @@
 <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script type="text/javascript" src="js/jGravity-min.js"></script>
 <script src="js/script.js" charset="utf-8"></script>
+<script src="js/jquery.horizonScroll.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/draggabilly/1.2.0/draggabilly.pkgd.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" charset="utf-8"></script>
 <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
 <link rel="stylesheet" href="/css/animate.css" media="screen" title="no title" charset="utf-8">
 <link href="/css/hover.css" rel="stylesheet" media="all">
-<link rel="shortcut icon" href="http://imgur.com/K1v7Spq" type="image/x-icon" />
+<link rel="shortcut icon" href="http://imgur.com/K1v7Spq" type="image/x-icon">
 <ul>
   <p>Jesse Pimenta</p>
 
@@ -34,49 +36,24 @@
 </ul>
   </head>
   <body>
-    <div class="page-slider">
     <div class='container-full'>
+      <div class="horizon-prev"><img src="/website_pieces/l-arrow.png"></div>
+
+      <div class="horizon-next"><img src="/website_pieces/r-arrow.png"></div>
       <div class="row">
       <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-        <img class="img-responsive loft" src="/website_pieces/loft_extended.png" alt="" />
-
-        <!--slider for music  -->
-        <input id="slide-1-trigger" type="radio" name="slides" checked>
-        <section class="slide slide-one">
-
-        </section
-
-
-        <a href="http://jp-la.co/web"><img id='web' class="img-responsive droppable" src="/website_pieces/web_transp.png" alt="" /></a>
-        <!--slider for web  -->
-        <input id="slide-2-trigger" type="radio" name="slides">
-        <section class="slide slide-two">
-          <h1>Web</h1>
-        </section>
-        <!--end slider for web  -->
-
+        <img class="img-responsive" src="/website_pieces/loft_extended.png" alt="" />
         <img id='plant1_transp' class="img-responsive draggable" src="/website_pieces/plant1_nobg.png" alt="" />
         <img id='djtable_transparent' class="img-responsive" src="/website_pieces/djtable_transparent.png" alt="" />
         <img id='cursor_normal' class="img-responsive draggable" src="/website_pieces/cursor_normal.png" alt="" />
         <img id='turntables_transp' class="img-responsive draggable invertMe" src="/website_pieces/turntables_transp.png" alt="" />
-        <img id='record2' class="img-responsive" src="/website_pieces/ps_record1.png" alt="" />
-        <img id='record1' class="img-responsive draggable" src="/website_pieces/nous_record1.png" alt="" />
+        <img id='record2' class="img-responsive hvr-grow" src="/website_pieces/ps_record1.png" alt="" />
+        <img id='record1' class="img-responsive draggable hvr-grow" src="/website_pieces/nous_record1.png" alt="" />
         <img id='carpet' class="img-responsive" src="/website_pieces/carpet_transp.png" alt="" />
-
-        <!-- slider for art -->
-        <input id="slide-3-trigger" type="radio" name="slides">
-        <section class="slide slide-three">
-          <h1>Art + Design</h1>
-        </section>
-        <!-- end slider for art -->
-        <a href="http://jp-la.co/design"><img id='design' class="img-responsive droppable" src="/website_pieces/design_transp.png" alt="" /></a>
-
-
-
-
-
-        <a href="http://soundcloud.com/dreamstrax"><img id='music' class="img-responsive droppable" src="/website_pieces/music_transp.png" alt=""/></a>
-        <a href="http://jp-la.co/personal"><img id='personal' class="img-responsive droppable" src="/website_pieces/personal_transp.png" alt="" /></a>
+        <a href="http://jp-la.co/web"><img id='web' class="img-responsive droppable hvr-bob" src="/website_pieces/web_transp.png" alt="" /></a>
+        <a href="http://jp-la.co/design"><img id='design' class="img-responsive droppable hvr-bob" src="/website_pieces/design_transp.png" alt="" /></a>
+        <a href="http://soundcloud.com/dreamstrax"><img id='music' class="img-responsive droppable hvr-bob" src="/website_pieces/music_transp.png" alt=""/></a>
+        <a href="http://jp-la.co/personal"><img id='personal' class="img-responsive droppable hvr-bob" src="/website_pieces/personal_transp.png" alt="" /></a>
         <img id='couch' class="img-responsive draggable" src="/website_pieces/couch_transparent.png" alt="" />
         <img id='bed' class="img-responsive" src="/website_pieces/bed_transp.png" alt="" />
         <img id='ashtray' class="img-responsive draggable" src="/website_pieces/ashtray.png" alt="" />
@@ -89,11 +66,21 @@
       </div>
       </div>
     </div>
-  </div>
-      <div class="row row-centered">
-      </div>
+<section data-role="section" id="section-section1">
+  <h1>sec 1</h1>
+</section>
 
+<section data-role="section" id="section-section2">
+  <h1>sec 2</h1>
+</section>
 
+<section data-role="section" id="section-section3">
+  <h1>sec 3</h1>
+</section>
+
+<section data-role="section" id="section-section4">
+  <h1>sec 4</h1>
+</section>
 
   </body>
 </html>
