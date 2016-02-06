@@ -18,7 +18,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
+            scrollTop: $( $(this).attr('href') ).offset()
         }, 600);
 
     });
@@ -28,7 +28,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
+            scrollTop: $( $(this).attr('href') ).offset()
         }, 600);
 
     });
@@ -37,7 +37,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
+            scrollTop: $( $(this).attr('href') ).offset()
         }, 600);
 
     });
@@ -46,7 +46,17 @@ $(document).ready(function(){
         e.preventDefault();
 
         $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset().top
+            scrollTop: $( $(this).attr('href') ).offset()
+        }, 600);
+
+    });
+
+    $(".backToHome").on("click", function( e ) {
+
+        e.preventDefault();
+
+        $("body, html").animate({
+            scrollTop: $( $(this).attr('href') ).offset()
         }, 600);
 
     });
@@ -107,11 +117,22 @@ $('#turntables_transp').click(function() {
   $(this).data("clicks", !clicks);
 });
 
+//
 
+//hide paragraph
+
+$('#design, #web, #personal, #music, #horizon-prev, #horizon-next').click(function(){
+  $('ul').css('opacity','0')
+})
+//show paragraph
+$('ul').hover(function(){
+  $(this).css('opacity','1')
+})
+//
 
 //hue rotate
 hue = 0;
-$('#bed').click(function(){
+$('#info').click(function(){
   var hueRotate = function(){
     hue++;
     if(hue >= 360)
@@ -120,6 +141,11 @@ $('#bed').click(function(){
     setTimeout(hueRotate, 2);
   }
   hueRotate();
+})
+
+$('#info').click(function(){
+  $('ul').toggle()
+
 })
 
 
