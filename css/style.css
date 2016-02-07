@@ -32,14 +32,34 @@ html {
 body {
   font-family: 'OCR A Std';
   font-weight: bolder;
-  background: white no-repeat center center fixed;
+  background: black no-repeat center center fixed;
   background-size: cover;
-  -webkit-filter: invert(10%);
+  -webkit-filter: invert(100%);
   width: 100%;
   height: 100%;
   margin: 0;
   position: relative;
   top: 0px;
+
+}
+
+@media screen and (max-width: 1024px) {
+  body{
+    position: absolute !important;
+  }
+}
+
+/*@media screen and (max-width: 1400px) {
+  #loft{
+width: 100% !important}
+}*/
+
+
+.webTitle {
+
+  top: 67px;
+  left: 600px;
+  line-height: 10px;
 
 }
 
@@ -82,6 +102,9 @@ top: 466px;
 left: 69px;
 font-size: 12px;
 transition: 2s;
+opacity: 1;
+
+
 }
 
 #info {

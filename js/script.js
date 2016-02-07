@@ -32,6 +32,8 @@ $(document).ready(function(){
 //The Math.floor() is used to round down this number.
 // Thus, 0.345... would result in 0 and 5.893.. would be floored to 5.
 
+
+
 //create random text array object
 var r_text = new Array ();
 r_text[0] = 'click on the right turntable';
@@ -41,14 +43,20 @@ r_text[3] = 'all furniture can be dragged around';
 // r_text[4] = 'the ? button hides the info above';
 r_text[4] = 'navigate with left and right arrows';
 
-$('#info').click(function(){
+ $('#info').click(function(){
   var i = Math.floor(5 * Math.random())
   var randomTip = r_text[i]
-  console.log(randomTip);
+  // console.log(randomTip);
 
-  $( ".toolTips" ).text(randomTip);
-  // $( ".toolTips" ).toggle( randomTip + "</p>");
-})
+  $( ".toolTips" ).text(randomTip).fadeToggle( "slow", "linear")
+  //  .animate({opacity:0})
+
+});
+//
+
+
+
+
 
 //gravity keybind to G
 var xTriggered = 0;
@@ -70,7 +78,7 @@ $( "html" ).keypress(function( event ) {
        });
 
 });
-
+//end keybinding
 
 
 
@@ -205,12 +213,12 @@ $("#section-section1").on("click", function( e ) {
 $('#turntables_transp').click(function() {
   var clicks = $(this).data('clicks');
   if (clicks) {
-    document.querySelector("body").setAttribute("style","-webkit-filter:invert(" + 10 + "%)")
-    $('body').css('background', 'white no-repeat center center fixed',
-    '-webkit-filter', 'invert("100%")')
-  } else {
     document.querySelector("body").setAttribute("style","-webkit-filter:invert(" + 100 + "%)")
     $('body').css('background', 'black no-repeat center center fixed',
+    '-webkit-filter', 'invert("100%")')
+  } else {
+    document.querySelector("body").setAttribute("style","-webkit-filter:invert(" + 10 + "%)")
+    $('body').css('background', 'white no-repeat center center fixed',
     '-webkit-filter', 'invert("100%")')
   }
   $(this).data("clicks", !clicks);
@@ -234,9 +242,20 @@ $('#info').click(function(){
 
 //hide info on click
 $('#info').click(function(){
-  $('ul').toggle()
+  $('ul').fadeToggle('slow','linear')
 
 })
+
+function resizeRoom(size){
+  var size = $('html').css('width','4900px')
+  if (size) {
+    $('body').css('position','absolute')
+  }
+  else {
+    $('body').css('position','relative')
+
+  }
+}
 
 
 
