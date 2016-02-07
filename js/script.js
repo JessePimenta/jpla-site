@@ -5,10 +5,48 @@ $(document).ready(function(){
   var secondAnimation = 'animated jello';
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
+//create random text array object
+var r_text = new Array ();
+r_text[0] = 'click on the right turntable.';
+r_text[1] = 'try dragging a record on to the turntable.';
+r_text[2] = 'hit the G key to really screw this site up';
+r_text[3] = 'almost all furniture can be dragged around';
+r_text[4] = 'the i button hides this info';
+r_text[5] = 'navigate with left and right arrows';
+
+//floating point number between 0-1
+// var i = Math.random();
+
+//we need a range from 0-5 so that it can be used as an index to retrieve the string from the r_text array
+// i = 6 * i;
+
+// multiply random floating point number so that we get a number (again a floating point) that ranges from 0.0 to 6.0.
+//The Math.floor() is used to round down this number.
+// Thus, 0.345... would result in 0 and 5.893.. would be floored to 5.
+var i = Math.floor(6 * Math.random())
+
+console.log(r_text[i]);
+
+
 //init slider
   $('section').horizon({
     swipe: false
   });
+
+$('#bed').click(function(){
+  // var tipArray = ['click on the right turntable.','try dragging a record on to the turntable.', 'hit the G key to really screw this site up','almost all furniture can be dragged around','navigate with left and right arrows','the i button hides this info']
+  // console.log(tipArray);
+  $('.contact').innerHTML = Math.floor((Math.random() * 100) + 1);
+  for (var i = 0; i < tipArray.length; i++) {
+  var randomNumber = Math.floor(Math.random()*tipArray.length);
+    return tipArray[i];
+  }
+  var randomNumber = Math.floor(Math.random()*tipArray.length);
+  return tipArray();
+  console.log(tipArray);
+})
+
+// audioElement.setAttribute('src', tipArray[randomNumber]);
 
 
 // jump to sections on click //
@@ -51,7 +89,7 @@ $(document).ready(function(){
 
     });
 
-    $(".backToHome").on("click", function( e ) {
+    $(".navDiv").on("click", function( e ) {
 
         e.preventDefault();
 
@@ -64,7 +102,9 @@ $(document).ready(function(){
 //end jump to sections on click //
 
 
-// gravity
+
+
+// GRAVITY
   $('#draftingtable_transp').on('click', function() {
          $('body').jGravity({
               target: 'everything',
@@ -75,6 +115,8 @@ $(document).ready(function(){
        });
    });
 // end gravity
+
+
 
 
 
@@ -100,6 +142,17 @@ $(document).ready(function(){
     $(this).data("clicks", !clicks);
   });
 
+  //info switch
+  $('#closeInfo').click(function() {
+    var clicks = $(this).data('clicks');
+    if (clicks) {
+      $(this).attr('src',"/website_pieces/info.png")
+    } else {
+      $(this).attr('src',"/website_pieces/closeInfo.png")
+    }
+    $(this).data("clicks", !clicks);
+  });
+
 
 
 //invert on off on turntables_transp
@@ -121,18 +174,22 @@ $('#turntables_transp').click(function() {
 
 //hide paragraph
 
-$('#design, #web, #personal, #music, #horizon-prev, #horizon-next').click(function(){
+$('#design, #web, #personal, #music, .horizon-prev, .horizon-next').click(function(){
   $('ul').css('opacity','0')
 })
+
 //show paragraph
-$('ul').hover(function(){
-  $(this).css('opacity','1')
+$('#info').click(function(){
+  $('ul').css('opacity','1')
+  console.log('felt the visibility');
 })
 //
 
+
+
 //hue rotate
 hue = 0;
-$('#info').click(function(){
+$('plant2_transp').click(function(){
   var hueRotate = function(){
     hue++;
     if(hue >= 360)
@@ -143,6 +200,10 @@ $('#info').click(function(){
   hueRotate();
 })
 
+$('#closeInfo').click(function(){
+  $('ul').toggle()
+
+})
 $('#info').click(function(){
   $('ul').toggle()
 
@@ -150,8 +211,10 @@ $('#info').click(function(){
 
 
 
+
 //navigate to links on drop
-    var $draggable =
+
+var $draggable =
 $('.draggable').draggabilly({
 
 })
@@ -203,7 +266,6 @@ $('.draggable').draggabilly({
 
 //animate links effects
 
-
 $('#web').hover(function(){
   $(this).addClass(secondAnimation).one(animationend,function(){
       $(this).removeClass(secondAnimation)
@@ -235,5 +297,6 @@ $('#record1').hover(function(){
     });
 })
 
-
 });
+
+// end jquery

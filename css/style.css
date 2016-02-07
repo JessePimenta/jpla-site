@@ -77,8 +77,16 @@ img {
 }
 
 #info {
-top: 439px;
+top: 441px;
 left: 34px;
+height: 45px;
+width: 32px;
+}
+#closeInfo {
+top: 422px;
+left: 44px;
+height: 80px;
+width: 80px;
 }
 
 #web {

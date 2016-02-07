@@ -8,22 +8,22 @@ Dependencies: Velocity.js (https://github.com/julianshapiro/velocity)
 
 TO DO:
 - change for loop of parent/els to use a higher order function
-- change function from accepting parameters to having an options object that overwrites defaults 
+- change function from accepting parameters to having an options object that overwrites defaults
 - implement requestAnimationFrame so plugin isn't dependent on velocity (code based on http://www.sitepoint.com/simple-animations-using-requestanimationframe/)
 
 */
 
 function perspectiveHover(el, parent, intensity) {
-    
+
     var self         = this,
         elClass      = el.replace(/\./g,''),
         parentClass  = parent.replace(/\./g,''),
         parent       = document.getElementsByClassName(parentClass),
         els          = document.getElementsByClassName(elClass);
 
-    
+
     this.perspective = function(e, el) {
-        
+
         var elX      = el.getBoundingClientRect().left,
             elY      = el.getBoundingClientRect().top,
             elWidth  = el.offsetWidth,
@@ -106,7 +106,7 @@ function perspectiveHover(el, parent, intensity) {
         });
 
     }
-    
+
 }
 
-perspectiveHover('.js-perspective-card', '.js-perspective', 15);
+perspectiveHover('.js-perspective-card-1','.js-perspective-card-2','.js-perspective-card-3','.js-perspective-card-4','.js-perspective-card-5','.js-perspective-card-6','.js-perspective-card-7','.js-perspective-card-8','.js-perspective-card-9', 15);
