@@ -5,14 +5,22 @@ $(document).ready(function(){
   var secondAnimation = 'animated jello';
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-//create random text array object
-var r_text = new Array ();
-r_text[0] = 'click on the right turntable.';
-r_text[1] = 'try dragging a record on to the turntable.';
-r_text[2] = 'hit the G key to really screw this site up';
-r_text[3] = 'almost all furniture can be dragged around';
-r_text[4] = 'the i button hides this info';
-r_text[5] = 'navigate with left and right arrows';
+//function to create a buffer stream that will push new elements into an array and print the tip as a list item
+// function createRandomTextNode(tip){
+//
+//   return($( "<li>" + tip + "</li>" ))
+//
+// }
+// //empty array for text nodes
+// var randomTextBuffer = [];
+
+//random text nodes to be pushed
+// randomTextBuffer.push( createRandomTextNode('click on the right turntable') )
+// randomTextBuffer.push( createRandomTextNode('try dragging a record on to the turntable') )
+// randomTextBuffer.push( createRandomTextNode('hit the G key to really screw this site up') )
+// randomTextBuffer.push( createRandomTextNode('almost all furniture can be dragged around') )
+// randomTextBuffer.push( createRandomTextNode('the i button hides this info') )
+// randomTextBuffer.push( createRandomTextNode('navigate with left and right arrows') )
 
 //floating point number between 0-1
 // var i = Math.random();
@@ -23,9 +31,23 @@ r_text[5] = 'navigate with left and right arrows';
 // multiply random floating point number so that we get a number (again a floating point) that ranges from 0.0 to 6.0.
 //The Math.floor() is used to round down this number.
 // Thus, 0.345... would result in 0 and 5.893.. would be floored to 5.
-var i = Math.floor(6 * Math.random())
 
-console.log(r_text[i]);
+//create random text array object
+var r_text = new Array ();
+r_text[0] = 'click on the right turntable.';
+r_text[1] = 'try dragging a record on to the turntable';
+r_text[2] = 'hit the G key to really screw this site up';
+r_text[3] = 'almost all furniture can be dragged around';
+r_text[4] = 'the i button hides this info';
+r_text[5] = 'navigate with left and right arrows';
+
+$('#info').click(function(){
+  var i = Math.floor(6 * Math.random())
+  var randomTip = r_text[i]
+  console.log(randomTip);
+
+  $( "div.tips" ).append("<p class='toolTip>'"+ randomTip + "</p>");
+})
 
 
 //init slider
@@ -33,23 +55,20 @@ console.log(r_text[i]);
     swipe: false
   });
 
-$('#bed').click(function(){
-  // var tipArray = ['click on the right turntable.','try dragging a record on to the turntable.', 'hit the G key to really screw this site up','almost all furniture can be dragged around','navigate with left and right arrows','the i button hides this info']
-  // console.log(tipArray);
-  $('.contact').innerHTML = Math.floor((Math.random() * 100) + 1);
-  for (var i = 0; i < tipArray.length; i++) {
-  var randomNumber = Math.floor(Math.random()*tipArray.length);
-    return tipArray[i];
-  }
-  var randomNumber = Math.floor(Math.random()*tipArray.length);
-  return tipArray();
-  console.log(tipArray);
-})
 
-// audioElement.setAttribute('src', tipArray[randomNumber]);
 
 
 // jump to sections on click //
+$("#section-section1").on("click", function( e ) {
+
+    e.preventDefault();
+
+    $("body, html").animate({
+        scrollTop: $( $(this).attr('href') ).offset()
+    }, 600);
+
+});
+
 
     $("#section-section2").on("click", function( e ) {
 
@@ -60,6 +79,7 @@ $('#bed').click(function(){
         }, 600);
 
     });
+
 
     $("#section-section3").on("click", function( e ) {
 
@@ -143,15 +163,15 @@ $('#bed').click(function(){
   });
 
   //info switch
-  $('#closeInfo').click(function() {
-    var clicks = $(this).data('clicks');
-    if (clicks) {
-      $(this).attr('src',"/website_pieces/info.png")
-    } else {
-      $(this).attr('src',"/website_pieces/closeInfo.png")
-    }
-    $(this).data("clicks", !clicks);
-  });
+  // $('#closeInfo').click(function() {
+  //   var clicks = $(this).data('clicks');
+  //   if (clicks) {
+  //     $(this).attr('src',"/website_pieces/info.png")
+  //   } else {
+  //     $(this).attr('src',"/website_pieces/closeInfo.png")
+  //   }
+  //   $(this).data("clicks", !clicks);
+  // });
 
 
 
@@ -172,18 +192,26 @@ $('#turntables_transp').click(function() {
 
 //
 
-//hide paragraph
+//hide paragraph on nav
 
 $('#design, #web, #personal, #music, .horizon-prev, .horizon-next').click(function(){
   $('ul').css('opacity','0')
 })
 
-//show paragraph
+//show  info paragraph
 $('#info').click(function(){
   $('ul').css('opacity','1')
   console.log('felt the visibility');
 })
 //
+
+
+//hide info on click
+$('#info').click(function(){
+  $('ul').toggle()
+
+})
+
 
 
 
@@ -204,11 +232,6 @@ $('#closeInfo').click(function(){
   $('ul').toggle()
 
 })
-$('#info').click(function(){
-  $('ul').toggle()
-
-})
-
 
 
 
