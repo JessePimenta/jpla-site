@@ -76,9 +76,12 @@ img {
   left: 0;
 }
 
-.tips {
-
-  top:500px
+.toolTips {
+  position: absolute;
+top: 466px;
+left: 69px;
+font-size: 12px;
+transition: 2s;
 }
 
 #info {

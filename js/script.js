@@ -34,20 +34,46 @@ $(document).ready(function(){
 
 //create random text array object
 var r_text = new Array ();
-r_text[0] = 'click on the right turntable.';
-r_text[1] = 'try dragging a record on to the turntable';
-r_text[2] = 'hit the G key to really screw this site up';
-r_text[3] = 'almost all furniture can be dragged around';
-r_text[4] = 'the i button hides this info';
-r_text[5] = 'navigate with left and right arrows';
+r_text[0] = 'click on the right turntable';
+r_text[1] = 'click and drag a record on to the turntable';
+r_text[2] = 'hit the G key to destroy this room';
+r_text[3] = 'all furniture can be dragged around';
+// r_text[4] = 'the ? button hides the info above';
+r_text[4] = 'navigate with left and right arrows';
 
 $('#info').click(function(){
-  var i = Math.floor(6 * Math.random())
+  var i = Math.floor(5 * Math.random())
   var randomTip = r_text[i]
   console.log(randomTip);
 
-  $( "div.tips" ).append("<p class='toolTip>'"+ randomTip + "</p>");
+  $( ".toolTips" ).text(randomTip);
+  // $( ".toolTips" ).toggle( randomTip + "</p>");
 })
+
+//gravity keybind to G
+var xTriggered = 0;
+$( "html" ).keypress(function( event ) {
+  if ( event.which == 71 ) {
+     event.preventDefault();
+  }
+  xTriggered++;
+  var msg = "Handler for .keypress() called " + xTriggered + " time(s).";
+  console.log( msg, "html" );
+  console.log( event );
+
+         $('body').jGravity({
+              target: 'everything',
+              ignoreClass: 'container-full',
+              weight:'light',
+              depth: 5,
+              drag: true
+       });
+
+});
+
+
+
+
 
 
 //init slider
