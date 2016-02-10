@@ -55,6 +55,13 @@ r_text[4] = 'navigate with left and right arrows';
 //
 
 
+$(window).load(function() {
+  $(".btn-nav").on("click tap", function() {
+    $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+    $(this).toggleClass("animated");
+  });
+});
+
 
 
 
@@ -85,9 +92,9 @@ $( "html" ).keypress(function( event ) {
 
 
 //init slider
-  $('section').horizon({
-    swipe: false
-  });
+  // $('section').horizon({
+  //   swipe: false
+  // });
 
 
 
@@ -228,8 +235,11 @@ $('#turntables_transp').click(function() {
 
 //hide paragraph on nav
 
-$('#design, #web, #personal, #music, .horizon-prev, .horizon-next').click(function(){
+$('#design, #web, #personal, #music, .horizon-prev, .horizon-next, .btn-nav').click(function(){
   $('ul').css('opacity','0')
+})
+$('.btn-nav').click(function(){
+  $('ul').css('opacity','1')
 })
 
 //show  info paragraph
@@ -240,7 +250,7 @@ $('#info').mouseover(function(){
 //
 
 
-//hide info on click
+//hide info on mouseover
 $('#info').mouseover(function(){
   $('ul').fadeToggle('slow','linear')
 

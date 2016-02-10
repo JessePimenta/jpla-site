@@ -3,8 +3,9 @@ html {
 }
 
 .perspective {
-  /* perspective: 800px; */
-  /* perspective-origin: top center; */
+   perspective: 800px;
+   perspective-origin: top center;
+   padding-left: 
 }
 
 .perspective-card-wrap {
@@ -27,7 +28,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url(https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=5b57e367fd1e525f687202b75468c678);
     text-align: center;
     background-color: white;
@@ -47,7 +48,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url("/art-design/round-3/stagesofus.jpg");
     text-align: center;
     background-color: white;
@@ -67,7 +68,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url('/art-design/round-3/Sludge Ball.jpg');
     text-align: center;
     background-color: white;
@@ -88,7 +89,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url('/art-design/round 2 scans/INITTOGETHERBW.jpg');
     text-align: center;
     background-color: white;
@@ -111,7 +112,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     text-align: center;
     background-color: white;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
@@ -131,7 +132,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     text-align: center;
     background-color: white;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
@@ -152,7 +153,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url('/art-design/round-3/Sensitive Wires Melting.jpg');
 
     text-align: center;
@@ -173,7 +174,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url('/art-design/round-3/ballofghosts.jpg');
 
     text-align: center;
@@ -194,7 +195,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     text-align: center;
     background-color: white;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
@@ -214,7 +215,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url('/art-design/round-3/blue clean.jpg');
     text-align: center;
     background-color: white;
@@ -235,7 +236,7 @@ html {
     color: white;
     padding: 1rem;
     text-transform: uppercase;
-    font-family: 'open sans';
+    font-family: 'OCR A Std';
     background-image: url(://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=5b57e367fd1e525f687202b75468c678);
     text-align: center;
     background-color: white;
