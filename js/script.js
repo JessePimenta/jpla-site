@@ -233,7 +233,7 @@ $('#design, #web, #personal, #music, .horizon-prev, .horizon-next').click(functi
 })
 
 //show  info paragraph
-$('#info').click(function(){
+$('#info').mouseover(function(){
   $('ul').css('opacity','1')
   console.log('felt the visibility');
 })
@@ -241,7 +241,7 @@ $('#info').click(function(){
 
 
 //hide info on click
-$('#info').click(function(){
+$('#info').mouseover(function(){
   $('ul').fadeToggle('slow','linear')
 
 })
