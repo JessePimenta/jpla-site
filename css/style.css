@@ -45,20 +45,17 @@ body {
 
 @media screen and (max-width: 1024px) {
   body{
-    position: absolute !important;
+    /*position: relative !important;*/
   }
 }
 
-@media screen and (max-width: 1000px) {
-section {
-position: relative;
-width: 100% auto !important;
-}
+
 
 }
 
 #loft {
-  width: 100% auto;
+  width: 100% !important;
+
 }
 
 
@@ -75,11 +72,16 @@ width: 100% auto !important;
   width:100%
   height:auto;
 }
+.container-full > a {
+  /*cursor: url(http://i.imgur.com/nu6VpKz.png), auto;*/
+  width:100%
+  height:auto;
+}
 
 a {
     color: black;
     text-decoration: none;
-    position: relative !important;
+    /*position: relative !important;*/
 }
 
 a:hover {
@@ -276,10 +278,10 @@ width: 80px;
 section {
   float: left;
   display: inline-block;
-  position: relative;
   height: 100%;
   padding: 0;
   margin: 0;
+  max-width: 100%;
 }
 
 .horizon-prev {

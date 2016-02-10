@@ -1,9 +1,10 @@
 html {
+  /*background-color: #ddd;*/
 }
 
 .perspective {
-   perspective: 800px;
-   perspective-origin: top center;
+  /* perspective: 800px; */
+  /* perspective-origin: top center; */
 }
 
 .perspective-card-wrap {
@@ -19,6 +20,26 @@ html {
     transform: translateZ(40px);
     text-align: center;
 }
+.perspective-card {
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: 'open sans';
+    background-image: url(https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=5b57e367fd1e525f687202b75468c678);
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
+
+    /* necessary for effect */
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+
+}
+
 .perspective-card-1 {
   width: 200px;
   height: 300px;
@@ -34,9 +55,9 @@ html {
     background-size: contain;
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
-    will-change: transform !important;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
 
 }
 .perspective-card-2 {
@@ -55,8 +76,8 @@ html {
 
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -77,8 +98,8 @@ html {
 
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -98,8 +119,8 @@ html {
     background-image: url('/art-design/round-3/12547380_990528351017092_249112909_n.jpg');
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -119,8 +140,8 @@ html {
 
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -140,8 +161,8 @@ html {
     background-size: cover;
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -161,9 +182,9 @@ html {
     background-size: cover;
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
-    will-change: transform !important;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
 
 }
 .perspective-card-8 {
@@ -181,8 +202,8 @@ html {
     background-image: url('/art-design/round 2 scans/jp cursor images.jpg');
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -201,8 +222,8 @@ html {
     background-size: cover;
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
@@ -222,8 +243,8 @@ html {
     background-size: cover;
 
     /* necessary for effect */
-    position: relative !important;
-    transform-style: preserve-3d !important;
+    position: relative;
+    transform-style: preserve-3d;
     will-change: transform;
 
 }
