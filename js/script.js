@@ -98,67 +98,77 @@ $( "html" ).keypress(function( event ) {
 
 
 
-
 // jump to sections on click //
-$("#section-section1").on("click", function( e ) {
-
-    e.preventDefault();
-
-    $("body, html").animate({
-        scrollTop: $( $(this).attr('href') ).offset()
-    }, 600);
-
-});
 
 
-    $("#section-section2").on("click", function( e ) {
-
-        e.preventDefault();
-
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset()
-        }, 600);
-
-    });
 
 
-    $("#section-section3").on("click", function( e ) {
+  // $("#design").click(function() {
+  //     $('html,body').animate({
+  //         scrollTop: $(".designSection").offset().top},
+  //         'slow');
+  // });
 
-        e.preventDefault();
 
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset()
-        }, 600);
-
-    });
-    $("#section-section4").on("click", function( e ) {
-
-        e.preventDefault();
-
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset()
-        }, 600);
-
-    });
-    $("#section-section5").on("click", function( e ) {
-
-        e.preventDefault();
-
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset()
-        }, 600);
-
-    });
-
-    $(".navDiv").on("click", function( e ) {
-
-        e.preventDefault();
-
-        $("body, html").animate({
-            scrollTop: $( $(this).attr('href') ).offset()
-        }, 600);
-
-    });
+// $("#section-section1").on("click", function( e ) {
+//
+//     e.preventDefault();
+//
+//     $("body, html").animate({
+//         scrollTop: $( $(this).attr('href') ).offset()
+//     }, 600);
+//
+// });
+//
+//
+//     $("#section-section2").on("click", function( e ) {
+//
+//         e.preventDefault();
+//
+//         $("body, html").animate({
+//             scrollTop: $( $(this).attr('href') ).offset()
+//         }, 600);
+//
+//     });
+//
+//
+//     $("#section-section3").on("click", function( e ) {
+//
+//         e.preventDefault();
+//
+//         $("body, html").animate({
+//             scrollTop: $( $(this).attr('href') ).offset()
+//         }, 600);
+//
+//     });
+//     $("#section-section4").on("click", function( e ) {
+//
+//         e.preventDefault();
+//
+//         $("body, html").animate({
+//             scrollTop: $( $(this).attr('href') ).offset()
+//         }, 600);
+//
+//     });
+//     $("#section-section5").on("click", function( e ) {
+//
+//         e.preventDefault();
+//
+//         $("body, html").animate({
+//             scrollTop: $( $(this).attr('href') ).offset()
+//         }, 600);
+//
+//     });
+//
+//     $(".navDiv").on("click", function( e ) {
+//
+//         e.preventDefault();
+//
+//         $("body, html").animate({
+//             scrollTop: $( $(this).attr('href') ).offset()
+//         }, 600);
+//
+//     });
 
 //end jump to sections on click //
 
@@ -166,15 +176,15 @@ $("#section-section1").on("click", function( e ) {
 
 
 // GRAVITY
-  $('#draftingtable_transp').on('click', function() {
-         $('body').jGravity({
-              target: 'everything',
-              ignoreClass: 'loft',
-              weight:'light',
-              depth: 5,
-              drag: true
-       });
-   });
+  // $('#draftingtable_transp').on('click', function() {
+  //        $('body').jGravity({
+  //             target: 'everything',
+  //             ignoreClass: 'loft',
+  //             weight:'light',
+  //             depth: 5,
+  //             drag: true
+  //      });
+  //  });
 // end gravity
 
 
@@ -236,14 +246,15 @@ $('#turntables_transp').click(function() {
 //hide paragraph on nav
 
 $('#design, #web, #personal, #music, .horizon-prev, .horizon-next, .btn-nav').click(function(){
-  $('ul').css('opacity','0')
-})
-$('.btn-nav').click(function(){
-  $('ul').css('opacity','1')
+  $('.infoP').css('opacity','0')
 })
 
+// $('.btn-nav').click(function(){
+//   $('ul').css('opacity','1')
+// })
+
 //show  info paragraph
-$('#info').mouseover(function(){
+$('#info').click(function(){
   $('ul').css('opacity','1')
   console.log('felt the visibility');
 })
@@ -251,7 +262,7 @@ $('#info').mouseover(function(){
 
 
 //hide info on mouseover
-$('#info').mouseover(function(){
+$('#info').click(function(){
   $('ul').fadeToggle('slow','linear')
 
 })
@@ -283,24 +294,19 @@ $('plant2_transp').click(function(){
   hueRotate();
 })
 
-$('#closeInfo').click(function(){
-  $('ul').toggle()
-
-})
-
-
 
 //navigate to links on drop
 
 var $draggable =
 $('.draggable').draggabilly({
 
-})
+});
       $(function() {
-           $( "#cursor_normal" ).draggable({
+           $("#cursor_normal").draggable({
 
            });
-           $( "#record1" ).draggable({
+
+           $("#record1").draggable({
 
            });
 
