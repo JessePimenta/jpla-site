@@ -55,12 +55,12 @@ r_text[4] = 'navigate with left and right arrows';
 //
 
 
-$(window).load(function() {
-  $(".btn-nav").on("click tap", function() {
-    $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
-    $(this).toggleClass("animated");
-  });
-});
+// $(window).load(function() {
+//   $(".btn-nav").on("click tap", function() {
+//     $(".nav-container").toggleClass("showNav hideNav").removeClass("hidden");
+//     $(this).toggleClass("animated");
+//   });
+// });
 
 
 
@@ -76,26 +76,15 @@ $( "html" ).keypress(function( event ) {
   console.log( msg, "html" );
   console.log( event );
 
-         $('body').jGravity({
+         $('html').jGravity({
               target: 'everything',
-              ignoreClass: 'container-full',
               weight:'light',
-              depth: 5,
+              depth: 1,
               drag: true
        });
 
 });
 //end keybinding
-
-
-
-
-
-//init slider
-  // $('section').horizon({
-  //   swipe: false
-  // });
-
 
 
 // jump to sections on click //

@@ -1,26 +1,246 @@
-/*draggable classes*/
-.draggable.is-pointer-down {
-    /*cursor: url(http://i.imgur.com/nu6VpKz.png), auto;*/
+/*custom responsive css MEDIA QUERIES*/
+
+
+
+
+
+/*
+@media all and (max-width: 48em){
+}
+*/
+
+/*large screen*/
+@media screen and (min-width: 1400px){
+
+  * {
+    transition: 1s !important;
+  }
+
+  #plant1_transp {
+    top: 238px !important;
+    left: 1291px !important;
+  }
+
+  #web {
+    left: 1120px !important;
+  }
+  #personal {
+
+  }
+  #music {
+
+  }
+  #design {
+
+  }
+
+}
+@media screen and (min-width: 1600px){
+
+ * {
+   transition: 1s !important;
+ }
+
+  #plant1_transp {
+    top: 248px !important;
+    left: 1491px !important;
+  }
+
+  #web {
+    left: 1300px !important;
+  }
+  #personal {
+
+  }
+  #music {
+
+  }
+  #design {
+    left: 1290px !important;
+    top: 797px !important;
+  }
+
+}
+@media screen and (min-width: 1700px){
+
+  #plant1_transp {
+    top: 313px !important;
+    left: 1582px !important;
+  }
+
+  #web {
+    left: 1400px !important;
+    top: 200px !important;
+  }
+  #personal {
+
+  }
+  #music {
+
+  }
+  #design {
+    left: 1290px !important;
+    top: 797px !important;
+  }
 }
 
-.draggable.is-dragging {
-  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
+/*ipad mini*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1){
+
+  #loft {
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+  }
 
 }
 
-/*.isnt-moving {
-    cursor: url(http://i.imgur.com/nu6VpKz.png), auto;
+/*ipad*/
+@media screen and (max-width: 48em) {
+
+  * {
+    transition: 1s !important;
+  }
+
+  #design{
+    left: 4.3125em !important;
+    top: 19.4375em !important;
+    visibility: visible !important;
+  }
+  #web{
+    left: 4.3125em !important;
+    top: 7.5em !important;
+    visibility: visible !important;
+  }
+  #personal{
+    left: 4.3125em !important;
+    top: 11.875em !important;
+    visibility: visible !important;
+  }
+  #music{
+    left: 4.3125em !important;
+    top: 30.125em !important;
+    visibility: visible !important;
+  }
+  .infoP {
+    visibility: hidden;
+  }
+  img {
+    visibility: hidden;
+  }
+
+  .container-full {
+    width: 100% !important;
+  }
+
+  #loft {
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
 }
-.is-moving {
-  cursor: url(http://i.imgur.com/K1v7Spq.png), auto;
-}*/
+
+/*iphone 6*/
+@media only screen
+and (min-device-width : 23.4375em)
+and (max-device-width : 41.6875em) {
+
+  * {
+    transition: 1s !important;
+  }
+
+  body {
+    zoom: 253%;
+  }
+
+  #design{
+    left: 4.3125em !important;
+    top: 19.4375em !important;
+    visibility: visible !important;
+  }
+  #web{
+    left: 4.3125em !important;
+    top: 7.5em !important;
+    visibility: visible !important;
+  }
+  #personal{
+    left: 4.3125em !important;
+    top: 11.875em !important;
+    visibility: visible !important;
+  }
+  #music{
+    left: 4.3125em !important;
+    top: 30.125em !important;
+    visibility: visible !important;
+  }
+  .infoP {
+    visibility: hidden;
+  }
+  img {
+    /*visibility: hidden;*/
+  }
+
+}
+/*iphone 5*/
+@media only screen
+and (min-device-width : 20em)
+and (max-device-width : 35.5em) {
+
+  * {
+    transition: 1s !important;
+  }
+
+  body {
+    zoom: 213%;
+  }
+
+
+    #design{
+      left: 4.3125em !important;
+      top: 19.4375em !important;
+      visibility: visible !important;
+    }
+    #web{
+      left: 4.3125em !important;
+      top: 7.5em !important;
+      visibility: visible !important;
+    }
+    #personal{
+      left: 4.3125em !important;
+      top: 11.875em !important;
+      visibility: visible !important;
+    }
+    #music{
+      left: 4.3125em !important;
+      top: 30.125em !important;
+      visibility: visible !important;
+    }
+    .infoP {
+      visibility: hidden;
+    }
+    img {
+      /*visibility: hidden;*/
+    }
+
+    #loft {
+      position: relative !important;
+      width: auto !important;
+      height: auto !important;
+    }
+
+
+}
 
 * {
   transition: .2s;
 }
 
 html {
-
+width: 100%;
 }
 
 
@@ -33,26 +253,13 @@ body {
   background-size: cover;
   -webkit-filter: invert(100%);
   width: 100%;
-  height: 100%;
+  height: 1000px;
   margin: 0;
   position: relative !important;
   top: 0px;
 
 }
 
-@media screen and (max-width: 768px) {
-  #design{
-    left: 69px !important;
-  }
-
-  .container-full {
-    width: 768px !important;
-  }
-}
-
-
-
-}
 
 #loft {
   width: 100%;
@@ -87,11 +294,11 @@ a {
 }
 
 a:hover {
-    color: black;
-    text-decoration: none;
+    /*color: black;*/
+    /*text-decoration: none;
     font-size: 20px;
-    transition: 1s;
-    position: relative !important;
+    transition: .2s;
+    position: relative !important;*/
 }
 
 
@@ -267,11 +474,7 @@ width: 80px;
   top: 461px;
   left: 305px;
 }
-#personal:hover {
-  top: 461px;
-  left: 305px;
-  /*cursor: url(http://i.imgur.com/K1v7Spq.png), auto;*/
-}
+
 
 .contact {
 
