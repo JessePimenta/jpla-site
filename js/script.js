@@ -267,6 +267,11 @@ function resizeRoom(size){
   }
 }
 
+$('.perspective-card__content').click(function(){
+
+
+  $('.perspective-card__content').css('zoom', "(" + 100 + "%)")
+})
 
 
 

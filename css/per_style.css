@@ -1,11 +1,13 @@
 html {
   /*background-color: #ddd;*/
+  height: auto;
 }
+
 
 .perspective {
    perspective: 800px;
    perspective-origin: top center;
-   padding-left: 
+   padding-left:
 }
 
 .perspective-card-wrap {
@@ -22,8 +24,8 @@ html {
     text-align: center;
 }
 .perspective-card {
-    width: 200px;
-    height: 300px;
+  width:250px;
+  height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -42,8 +44,8 @@ html {
 }
 
 .perspective-card-1 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -62,8 +64,8 @@ html {
 
 }
 .perspective-card-2 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -83,8 +85,8 @@ html {
 
 }
 .perspective-card-3 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -95,7 +97,6 @@ html {
     background-color: white;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
     background-size: cover;
-    image-orientation
 
 
     /* necessary for effect */
@@ -106,8 +107,8 @@ html {
 }
 
 .perspective-card-4 {
-    width: 200px;
-    height: 300px;
+  width:250px;
+  height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -126,8 +127,8 @@ html {
 
 }
 .perspective-card-5 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -147,8 +148,8 @@ html {
 
 }
 .perspective-card-6 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -168,8 +169,8 @@ html {
 
 }
 .perspective-card-7 {
-    width: 200px;
-    height: 300px;
+  width:250px;
+  height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -189,8 +190,8 @@ html {
 
 }
 .perspective-card-8 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
@@ -209,35 +210,14 @@ html {
 
 }
 .perspective-card-9 {
-  width: 200px;
-  height: 300px;
+width:250px;
+height:350px;
     margin: 50px;
     color: white;
     padding: 1rem;
     text-transform: uppercase;
     font-family: 'OCR A Std';
     background-image: url('/art-design/round-3/blue clean.jpg');
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
-}
-
-.perspective-card-11 {
-  width: 200px;
-  height: 300px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url(://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=5b57e367fd1e525f687202b75468c678);
     text-align: center;
     background-color: white;
     box-shadow: 0px 3px 20px rgba(0,0,0,0.15);

@@ -35,7 +35,21 @@
   }
 
 }
+
+@media screen and (min-width: 1500px){
+
+  #web {
+    top: 154px !important;
+    left: 1282px !important;
+  }
+  #plant1_transp {
+    top: 249px !important;
+      left: 1485px !important;
+  }
+}
+
 @media screen and (min-width: 1600px){
+}
 
  * {
    transition: 1s !important;
@@ -81,6 +95,115 @@
   #design {
     left: 1290px !important;
     top: 797px !important;
+  }
+}
+
+@media screen and (min-width: 1900px){
+
+#plant1_transp{
+  top: 337px !important;
+    left: 1782px !important;
+}
+
+#web{
+left: 1550px !important;
+top: 200px !important;
+}
+
+#food{
+    top: 568px;
+    left: 1093px;
+}
+
+#fridge_transp {
+    top: 528px;
+    left: 975px;
+}
+
+#plant2_transp {
+    top: 533px;
+    left: 920px;
+}
+
+#design {
+    left: 1583px !important;
+    top: 972px !important;
+}
+
+#carpet {
+    top: 896px;
+    left: 859px;
+}
+
+
+#draftingtable_transp {
+    top: 941px;
+    left: 1292px;
+}
+}
+
+@media screen and (min-width: 2000px){
+
+  #plant1_transp{
+    top: 377px !important;
+      left: 1882px !important;
+  }
+
+  #web{
+  left: 1650px !important;
+  top: 270px !important;
+  }
+
+  #food{
+      top: 668px;
+      left: 1093px;
+  }
+
+  #fridge_transp {
+      top: 528px;
+      left: 975px;
+  }
+
+  #plant2_transp {
+      top: 533px;
+      left: 920px;
+  }
+
+  #design {
+      left: 1583px !important;
+      top: 972px !important;
+  }
+
+  #carpet {
+      top: 896px;
+      left: 859px;
+  }
+
+
+  #draftingtable_transp {
+      top: 1041px;
+      left: 1892px;
+  }
+}
+
+@media screen and (min-width: 1150px){
+  #plant1_transp{
+    top: 159px !important;
+    left: 1055px !important;
+  }
+  #web{
+    top: 79px !important;
+    left: 905px !important;
+  }
+}
+@media screen and (min-width: 1400px){
+  #plant1_transp{
+    top: 159px !important;
+    left: 1055px !important;
+  }
+  #web{
+    top: 79px !important;
+    left: 905px !important;
   }
 }
 

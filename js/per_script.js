@@ -1,3 +1,28 @@
+
+$(document).ready(function(){
+  var xTriggered = 0;
+  $( "html" ).keypress(function( event ) {
+    if ( event.which == 71 ) {
+       event.preventDefault();
+    }
+    xTriggered++;
+    var msg = "Handler for .keypress() called " + xTriggered + " time(s).";
+    console.log( msg );
+    console.log( event );
+
+           $('html').jGravity({
+                target: 'everything',
+                weight:'light',
+                depth: 1,
+                drag: true
+         });
+
+  });
+})
+
+
+
+
 function perspectiveHover(el, parent, intensity) {
 
     var self         = this,
@@ -94,4 +119,6 @@ function perspectiveHover(el, parent, intensity) {
 
 }
 
-perspectiveHover('.js-perspective-card', '.js-perspective', 15);
+
+
+perspectiveHover('.js-perspective-card', '.js-perspective', 9);
