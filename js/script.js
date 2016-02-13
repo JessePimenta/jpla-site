@@ -41,10 +41,10 @@ r_text[1] = 'click and drag a record on to the turntable';
 r_text[2] = 'hit the G key to destroy this room';
 r_text[3] = 'all furniture can be dragged around';
 // r_text[4] = 'the ? button hides the info above';
-r_text[4] = 'navigate with left and right arrows';
+// r_text[4] = 'navigate with left and right arrows';
 
  $('#info').click(function(){
-  var i = Math.floor(5 * Math.random())
+  var i = Math.floor(4 * Math.random())
   var randomTip = r_text[i]
   // console.log(randomTip);
 
@@ -53,6 +53,9 @@ r_text[4] = 'navigate with left and right arrows';
 
 });
 //
+
+
+
 
 
 // $(window).load(function() {
@@ -87,93 +90,9 @@ $( "html" ).keypress(function( event ) {
 //end keybinding
 
 
-// jump to sections on click //
-
-
-
-
-  // $("#design").click(function() {
-  //     $('html,body').animate({
-  //         scrollTop: $(".designSection").offset().top},
-  //         'slow');
-  // });
-
-
-// $("#section-section1").on("click", function( e ) {
-//
-//     e.preventDefault();
-//
-//     $("body, html").animate({
-//         scrollTop: $( $(this).attr('href') ).offset()
-//     }, 600);
-//
-// });
-//
-//
-//     $("#section-section2").on("click", function( e ) {
-//
-//         e.preventDefault();
-//
-//         $("body, html").animate({
-//             scrollTop: $( $(this).attr('href') ).offset()
-//         }, 600);
-//
-//     });
-//
-//
-//     $("#section-section3").on("click", function( e ) {
-//
-//         e.preventDefault();
-//
-//         $("body, html").animate({
-//             scrollTop: $( $(this).attr('href') ).offset()
-//         }, 600);
-//
-//     });
-//     $("#section-section4").on("click", function( e ) {
-//
-//         e.preventDefault();
-//
-//         $("body, html").animate({
-//             scrollTop: $( $(this).attr('href') ).offset()
-//         }, 600);
-//
-//     });
-//     $("#section-section5").on("click", function( e ) {
-//
-//         e.preventDefault();
-//
-//         $("body, html").animate({
-//             scrollTop: $( $(this).attr('href') ).offset()
-//         }, 600);
-//
-//     });
-//
-//     $(".navDiv").on("click", function( e ) {
-//
-//         e.preventDefault();
-//
-//         $("body, html").animate({
-//             scrollTop: $( $(this).attr('href') ).offset()
-//         }, 600);
-//
-//     });
-
-//end jump to sections on click //
-
-
-
 
 // GRAVITY
-  // $('#draftingtable_transp').on('click', function() {
-  //        $('body').jGravity({
-  //             target: 'everything',
-  //             ignoreClass: 'loft',
-  //             weight:'light',
-  //             depth: 5,
-  //             drag: true
-  //      });
-  //  });
+
 // end gravity
 
 
@@ -267,11 +186,6 @@ function resizeRoom(size){
   }
 }
 
-$('.perspective-card__content').click(function(){
-
-
-  $('.perspective-card__content').css('zoom', "(" + 100 + "%)")
-})
 
 
 
@@ -374,7 +288,17 @@ $('#record1').hover(function(){
       $(this).removeClass(secondAnimation)
     });
 })
+$('button').hover(function(){
+  $(this).addClass(secondAnimation).one(animationend,function(){
+      $(this).removeClass(secondAnimation)
+    });
+})
 
 });
+
+
+
+// toggle between design and artwork
+
 
 // end jquery

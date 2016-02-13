@@ -18,6 +18,18 @@ $(document).ready(function(){
          });
 
   });
+
+
+  $('.newboxes').on('click', function() {
+         $('body').jGravity({
+              target: 'everything',
+              weight:'heavy',
+              depth: 3,
+              drag: true
+       });
+   });
+
+
 })
 
 
@@ -118,6 +130,22 @@ function perspectiveHover(el, parent, intensity) {
     }
 
 }
+
+
+
+function showonlyone(thechosenone) {
+     $('.newboxes').each(function(index) {
+          if ($(this).attr("id") == thechosenone) {
+               $(this).show(200);
+          }
+          else {
+               $(this).hide(600);
+          }
+     });
+}
+
+
+
 
 
 

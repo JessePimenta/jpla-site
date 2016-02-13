@@ -8,6 +8,7 @@ html {
    perspective: 800px;
    perspective-origin: top center;
    padding-left:
+
 }
 
 .perspective-card-wrap {
@@ -22,6 +23,7 @@ html {
     width: 100%;
     transform: translateZ(40px);
     text-align: center;
+    
 }
 .perspective-card {
   width:250px;
