@@ -2,232 +2,567 @@ html {
   /*background-color: #ddd;*/
   height: auto;
 }
-
-
 .perspective {
-   perspective: 800px;
-   perspective-origin: top center;
-   padding-left:
+  perspective: 800px;
+  perspective-origin: top center;
+  width: 100% auto;
+  height: auto;
 
 }
-
 .perspective-card-wrap {
-    perspective: 1000px;
-    perspective-origin: top center;
-    display: inline-block;
+  perspective: 1000px;
+  perspective-origin: top center;
+  display: inline-block;
+
 }
 .perspective-card__content {
-    position:absolute;
-    top:2rem;
-    left: 0;
-    width: 100%;
-    transform: translateZ(40px);
-    text-align: center;
-    
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  transform: translateZ(40px);
+  text-align: center;
+  width: 100% auto;
+  height: auto;
 }
 .perspective-card {
-  width:250px;
-  height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url(https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=5b57e367fd1e525f687202b75468c678);
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url(https://images.unsplash.com/photo-1441906363162-903afd0d3d52?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=5b57e367fd1e525f687202b75468c678);
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
-
 .perspective-card-1 {
-width:250px;
-height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url("/art-design/round-3/stagesofus.jpg");
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: contain;
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/art-design/round-3/stagesofus.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-2 {
-width:250px;
-height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url('/art-design/round-3/Sludge Ball.jpg');
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/art-design/round-3/Sludge Ball.jpg');
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-3 {
-width:250px;
-height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url('/art-design/round 2 scans/INITTOGETHERBW.jpg');
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/art-design/round 2 scans/INITTOGETHERBW.jpg');
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
-
 .perspective-card-4 {
-  width:250px;
-  height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-    background-image: url('/art-design/round-3/12547380_990528351017092_249112909_n.jpg');
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  background-image: url('/art-design/round-3/12547380_990528351017092_249112909_n.jpg');
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-5 {
-width:250px;
-height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-    background-image: url('/art-design/round-3/fallingfallingfalling_green.jpg');
-
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  background-image: url('/art-design/round-3/fallingfallingfalling_green.jpg');
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-6 {
-width:250px;
-height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url('/art-design/round-3/Sensitive Wires Melting.jpg');
-
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/art-design/round-3/Sensitive Wires Melting.jpg');
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-7 {
-  width:250px;
-  height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    background-image: url('/art-design/round-3/ballofghosts.jpg');
-
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/art-design/round-3/ballofghosts.jpg');
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-8 {
-width:250px;
-height:350px;
-    margin: 50px;
-    color: white;
-    padding: 1rem;
-    text-transform: uppercase;
-    font-family: 'OCR A Std';
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-    background-image: url('/art-design/round 2 scans/jp cursor images.jpg');
-
-    /* necessary for effect */
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  background-image: url('/art-design/round 2 scans/jp cursor images.jpg');
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 .perspective-card-9 {
-width:250px;
-height:350px;
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/art-design/round-3/blue clean.jpg');
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.perspective-card-design-1 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  margin-bottom: 30px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/obey-white-the-occult-tee-product-3-032814940-normal.jpeg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-2 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/obey-white-the-occult-tee-product-1-032814800-normal.jpeg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-3 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/design-shots/obey-white-the-occult-tee-product-4-032815050-normal (1).jpeg');
+  text-align: center;
+  background-color: black;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+  background-position-x: 545px;
+  max-width: 100% !important;
+  background-clip: content-box;
+}
+.perspective-card-design-4 {
+  width: 550px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/SU16_ASCII.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-5 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/Screen Shot 2016-02-12 at 5.35.16 PM.png");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-6 {
+  width: 550px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url('/design-shots/SU16_CHAINS.jpg');
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /* necessary for effect */
+  position: relative;
+  -webkit-filter: invert(100%);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-7 {
+  width: 359px;
+  height: 359px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/DJQUFLYER-005-FP.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-8 {
+  width: 550px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/SU16TOKYO.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-9 {
+  width: 350px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/10818125_1532068873698168_191326840_n.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-10 {
+  width: 550px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/SU16F_LOUD.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-11 {
+      width: 254px;
+      height: 331px;
+      margin: 50px;
+      color: white;
+      padding: 1rem;
+      text-transform: uppercase;
+      font-family: 'OCR A Std';
+      background-image: url("/design-shots/ps919 v3(blue_brightness).jpg");
+      text-align: center;
+      background-color: white;
+      box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+      background-size: cover;
+      -webkit-filter: invert(100%);
+      position: relative;
+      transform-style: preserve-3d;
+      will-change: transform;
+      background-position-x: -97px;
+      background-clip: inherit;
+}
+.perspective-card-design-12 {
+  width: 550px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/SU16_W.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-13 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/tumblr_ldsskku8WA1qee2r6.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-14 {
+  width: 250px;
+  height: 431px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/Screen Shot 2016-02-12 at 5.47.46 PM.png");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: contain;
+  -webkit-filter: invert(100%);
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-15 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/isometric-paper-from-flickr.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /*-webkit-filter: invert(100%);*/
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.perspective-card-design-16 {
+  width: 250px;
+  height: 350px;
+  margin: 50px;
+  color: white;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-family: 'OCR A Std';
+  background-image: url("/design-shots/isosketch.jpg");
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  /*-webkit-filter: invert(100%);*/
+
+  /* necessary for effect */
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.perspective-card-1-web {
+    width: 100%;
+    height: 350px;
     margin: 50px;
+    margin-bottom: 3em;
     color: white;
     padding: 1rem;
     text-transform: uppercase;
     font-family: 'OCR A Std';
-    background-image: url('/art-design/round-3/blue clean.jpg');
+    background-image: url("/Web-shots/Screen Shot 2016-02-06 at 10.39.49 PM.png");
     text-align: center;
-    background-color: white;
-    box-shadow: 0px 3px 20px rgba(0,0,0,0.15);
-    background-size: cover;
-
-    /* necessary for effect */
+    /* background-color: white; */
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+    background-size: contain;
+    position: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    -webkit-filter: invert(100%);
     position: relative;
     transform-style: preserve-3d;
     will-change: transform;
+}
 
+
+
+}
+
+span {
+  display: none;
+}
+
+.details {
+margin: 3px;
+margin-left: 48px;
+font-size: 12px;
+border: 2px solid black;
+/* width: 44%; */
+background-clip: content-box;
+padding: 5px 10px 3px 5px;
 }

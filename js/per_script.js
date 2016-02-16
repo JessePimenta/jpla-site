@@ -1,3 +1,5 @@
+var secondAnimation = 'animated jello';
+var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 $(document).ready(function(){
   var xTriggered = 0;
@@ -19,15 +21,20 @@ $(document).ready(function(){
 
   });
 
+  $('button').hover(function(){
+    $(this).addClass(secondAnimation).one(animationend,function(){
+        $(this).removeClass(secondAnimation)
+      });
+  })
 
-  $('.newboxes').on('click', function() {
-         $('body').jGravity({
-              target: 'everything',
-              weight:'heavy',
-              depth: 3,
-              drag: true
-       });
-   });
+  // $('.newboxes').on('click', function() {
+  //        $('body').jGravity({
+  //             target: 'everything',
+  //             weight:'heavy',
+  //             depth: 3,
+  //             drag: true
+  //      });
+  //  });
 
 
 })
@@ -143,6 +150,8 @@ function showonlyone(thechosenone) {
           }
      });
 }
+
+
 
 
 
