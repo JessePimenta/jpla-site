@@ -26,6 +26,11 @@ $(document).ready(function(){
         $(this).removeClass(secondAnimation)
       });
   })
+  $('#artworkTab, #designTab').hover(function(){
+    $(this).addClass(secondAnimation).one(animationend,function(){
+        $(this).removeClass(secondAnimation)
+      });
+  })
 
   // $('.newboxes').on('click', function() {
   //        $('body').jGravity({
