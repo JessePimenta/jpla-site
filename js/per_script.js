@@ -26,7 +26,12 @@ $(document).ready(function(){
         $(this).removeClass(secondAnimation)
       });
   })
-  $('#artworkTab, #designTab').hover(function(){
+  $('#designTab').hover(function(){
+    $(this).addClass(secondAnimation).one(animationend,function(){
+        $(this).removeClass(secondAnimation)
+      });
+  })
+  $('#artworkTab').hover(function(){
     $(this).addClass(secondAnimation).one(animationend,function(){
         $(this).removeClass(secondAnimation)
       });
