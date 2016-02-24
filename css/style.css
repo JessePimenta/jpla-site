@@ -352,7 +352,7 @@ and (max-device-width : 35.5em) {
 }
 
 * {
-  transition: .2s;
+  transition: .5s;
 }
 
 html {
@@ -450,7 +450,7 @@ opacity: 1;
 }
 
 #info {
-top: 441px;
+top: 477px;
 left: 34px;
 height: 45px;
 width: 32px;
@@ -638,7 +638,11 @@ padding-left: 42px;
   /*padding-left: 40px;*/
   width: 100%;
   text-align:center;
-
+}
+.sectionSec {
+  padding-left: 40px;
+  width: 100%;
+  text-align:center;
 }
 
 /*.musicSec h1 {
@@ -654,6 +658,9 @@ padding-left: 42px;
 
 .backToHome{
     padding-left: 42px;
+}
+.backToHomeGallery{
+    /*padding-left: 42px;*/
 }
 
 /*sidebar*/
