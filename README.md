@@ -1,14 +1,14 @@
-# jpla-site
+# jp-la.co
 
 
-##libraries used:
+#libraries used:
 
-#jGravity
-#draggabilly
-#animate.css
-#hover.css
-#jQuery
-#bootstrap
-#velocity.js
+###jGravity
+###draggabilly
+###animate.css
+###hover.css
+###jQuery
+###bootstrap
+###velocity.js
 
 
