@@ -36,10 +36,10 @@ $(document).ready(function(){
 
 //create random text array object
 var r_text = new Array ();
-r_text[0] = 'click on the right turntable';
+r_text[0] = 'click on the turntables';
 r_text[1] = 'click and drag a record on to the turntable';
-r_text[2] = 'hit the G key to destroy this room';
-r_text[3] = 'all furniture can be dragged around';
+r_text[2] = 'hit the G key to destroy this room!';
+r_text[3] = 'all furniture can be dragged around!';
 // r_text[4] = 'the ? button hides the info above';
 // r_text[4] = 'navigate with left and right arrows';
 
@@ -76,8 +76,8 @@ $( "html" ).keypress(function( event ) {
   }
   xTriggered++;
   var msg = "Handler for .keypress() called " + xTriggered + " time(s).";
-  console.log( msg, "html" );
-  console.log( event );
+  // console.log( msg, "html" );
+  // console.log( event );
 
          $('html').jGravity({
               target: 'everything',
@@ -94,7 +94,7 @@ $( "html" ).keypress(function( event ) {
 // GRAVITY
 // end gravity
 
-
+console.log("if you have opened this up, i will assume you're also a developer. If so hit me up! I'd love to talk some code, and see if theres a way we can collaborate.");
 
 
 
@@ -103,7 +103,7 @@ $( "html" ).keypress(function( event ) {
     document.querySelector("body").setAttribute("style","-webkit-filter:invert(" + 100 + "%)")
     $('body').css('background', 'black no-repeat center center fixed',
     '-webkit-filter', 'invert("100%")')
-      console.log('felt');
+      // console.log('felt');
   });
 // end invert
 
@@ -163,7 +163,7 @@ $('#design, #web, #personal, #music, .horizon-prev, .horizon-next, .btn-nav').cl
 //show  info paragraph
 $('#info').click(function(){
   $('ul').css('opacity','1')
-  console.log('felt the visibility');
+  // console.log('felt the visibility');
 })
 //
 
@@ -220,34 +220,34 @@ $('.draggable').draggabilly({
            $( "#web" ).droppable({
              drop: function() {
               location.href = "http://jp-la.co/web.html"
-              console.log('felt the drop on web');
+              // console.log('felt the drop on web');
              }
            });
 
            $( "#design" ).droppable({
              drop: function() {
                location.href = 'http://jp-la.co/art-design.html'
-               console.log('felt the drop on design');
+              //  console.log('felt the drop on design');
              }
            });
 
            $( "#music" ).droppable({
              drop: function() {
                location.href = 'http://soundcloud.com/dreamstrax'
-               console.log('felt the drop on music');
+              //  console.log('felt the drop on music');
              }
            });
 
            $( "#personal" ).droppable({
              drop: function() {
                location.href = 'http://jp-la.co/portfolio.html'
-               console.log('felt the drop on personal');
+              //  console.log('felt the drop on personal');
              }
            });
            $( "#turntables_transp" ).droppable({
              drop: function() {
                location.href = 'https://soundcloud.com/nous-disques/sets/dreams-of-the-grid-ep-us011'
-               console.log('felt the drop on personal');
+              //  console.log('felt the drop on personal');
              }
            });
 
