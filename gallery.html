@@ -8,6 +8,8 @@
         <link href="/css/hover.css" rel="stylesheet" media="all">
         <link href="css/simple-sidebar.css" rel="stylesheet">
         <link rel="shortcut icon" href="http://imgur.com/K1v7Spq" type="image/x-icon">
+        <link rel="stylesheet" href="/css/animate.css" media="screen" title="no title" charset="utf-8">
+
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" charset="utf-8"></script>
 
 
@@ -19,11 +21,12 @@
       <h1 class='designSec'>ART + DESIGN</h1>
       <div class="container">
 
-      <div class="">
-        <!-- <a href="#">ART + DESIGN</a> -->
-        <a class="backToHome" href="index.html">home |</a>
-          <button type="button" id='artworktab' name="button" onclick="showonlyone('newboxes1')">artwork</button>
-          <button type="button" id='designtab' name="button" onclick="showonlyone('newboxes2')">| design</button>
+      <div class="nav text-center">
+        <a class="backToHomeGallery artworkTab" href="index.html">home |</a>
+          <button type="button" id='artworktab' name="button" onclick="showonlyone('newboxes1')" class="artworkTab">artwork |</button>
+          <button type="button" id='designtab' name="button" onclick="showonlyone('newboxes2')" class="designTab">design |</button>
+          <a class="backToHomeGallery" id="artworkTab" href="music.html">music |</a>
+          <a class="backToHomeGallery" id="designTab" href="personal.html">CV </a>
       </div>
       <div class="row">
 
