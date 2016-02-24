@@ -26,12 +26,17 @@ $(document).ready(function(){
         $(this).removeClass(secondAnimation)
       });
   })
-  $('#designTab').hover(function(){
+  $('.designTab').hover(function(){
     $(this).addClass(secondAnimation).one(animationend,function(){
         $(this).removeClass(secondAnimation)
       });
   })
-  $('#artworkTab').hover(function(){
+  $('.artworkTab').hover(function(){
+    $(this).addClass(secondAnimation).one(animationend,function(){
+        $(this).removeClass(secondAnimation)
+      });
+  })
+  $('.backToHomeGallery').hover(function(){
     $(this).addClass(secondAnimation).one(animationend,function(){
         $(this).removeClass(secondAnimation)
       });
