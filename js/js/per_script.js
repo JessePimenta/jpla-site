@@ -4,13 +4,13 @@ var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 $(document).ready(function(){
   var xTriggered = 0;
   $( "html" ).keypress(function( event ) {
-    if ( event.which == 71 ) {
+    if ( event.which == 103 ) {
        event.preventDefault();
     }
     xTriggered++;
     var msg = "Handler for .keypress() called " + xTriggered + " time(s).";
-    console.log( msg );
-    console.log( event );
+    // console.log( msg );
+    // console.log( event );
 
            $('html').jGravity({
                 target: 'everything',
@@ -36,11 +36,11 @@ $(document).ready(function(){
         $(this).removeClass(secondAnimation)
       });
   })
-  $('.backToHomeGallery').hover(function(){
-    $(this).addClass(secondAnimation).one(animationend,function(){
-        $(this).removeClass(secondAnimation)
-      });
-  })
+  // $('.backToHomeGallery').hover(function(){
+  //   $(this).addClass(secondAnimation).one(animationend,function(){
+  //       $(this).removeClass(secondAnimation)
+  //     });
+  // })
 
   // $('.newboxes').on('click', function() {
   //        $('body').jGravity({
@@ -86,7 +86,7 @@ function perspectiveHover(el, parent, intensity) {
 
     this.reset = function(el, valX) {
 
-        console.log(valX);
+        // console.log(valX);
 
         animate({
             time: 0.5,  //time in seconds
@@ -129,7 +129,7 @@ function perspectiveHover(el, parent, intensity) {
 
         //matches[1] contains the value between the parentheses
         // console.log(matches[1]);
-        console.log( matches );
+        // console.log( matches );
     }
 
     for (var i = 0; i < parent.length; i++) {
